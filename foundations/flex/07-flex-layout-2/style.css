@@ -2,28 +2,105 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+
+  display: flex;
+  /* border: solid; */
+  /* justify-content: center; */
+  align-items: center;
+  padding-left: 16px;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+
+  /* flex-basis: 300px; */
+  flex-shrink: 0;
+  font-size: 24px;
+  padding: 16px;
+  display: flex;
+  /* justify-content: start; */
+  border: solid;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+  display: flex;
+
+  /* min-width: 150px; */
+  max-width: 300px;
+  padding: 20px
+  /* gap: 10px; */
+}
+
+/* Added Stuff */
+
+.container-1 {
+  /* border: solid; */
+  display: flex;
+  flex: 1;
+  /* margin: 0 */
+}
+
+.sidebar li,
+.sidebar a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+
+  margin: 0;
+
+  /* border: solid; */
+  /* display: flex; */
+  /* flex: 1; */
+  /* margin: 10px 0px */
+  /* justify-content: space-between; */
+}
+
+ul {
+  border: solid;
+  margin: -10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: center; */
+  flex: 1;
+  /* align-items: center; */
+}
+
+.cards-container {
+  border: solid;
+  display: flex;
+  flex: 1;
+  padding: 48px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+
 }
